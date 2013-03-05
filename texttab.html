@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>New Tab</title>
+    <style type="text/css">
+      body {
+        background-color: #dedede;
+        padding: 1%;
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666;
+      }
+      p {
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 1%;
+        outline: none;
+        transition: background-color 0.5s;
+        -webkit-transition: background-color 0.5s;
+      }
+      p:focus {
+        background-color: #fff;
+      }
+      p:focus span {
+        display: none;
+      }
+      p span {
+        font-style: italic;
+        color: #999;
+      }
+    </style>
+  </head>
+
+  <body>
+  <p contenteditable="true"></p>
+  </body>
+</html>
