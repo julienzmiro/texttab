@@ -3,45 +3,9 @@
   <head>
     <meta charset="utf8" />
     <title>New Tab</title>
-    <style type="text/css">
-      body {
-        background-color: #dedede;
-        padding: 1%;
-        margin: 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        color: #666;
-      }
-      p {
-        background-color: #f8f8f8;
-        margin: 0;
-        padding: 2%;
-        outline: none;
-        transition: background-color 0.5s;
-        -webkit-transition: background-color 0.5s;
-      }
-      p:focus {
-        background-color: #fff;
-      }
-      p:focus span {
-        display: none;
-      }
-      p span {
-        font-style: italic;
-        color: #999;
-      }
-      p[data-placeholderempty]:not(:focus):before {
-          content: attr(data-placeholder);
-          float: left;
-          margin-left: 2px;
-          color: #bbb;
-          font-style: italic;
-      }
-    </style>
+    <link rel="stylesheet" href="texttab.css" />
     <script src="texttab.js"></script>
   </head>
-
   <body>
   <p contenteditable="true" data-placeholder="Type text here..." data-placeholderempty="true"></p>
   </body>
